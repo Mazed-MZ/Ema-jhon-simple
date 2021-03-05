@@ -1,0 +1,17 @@
+.nav-div{
+  text-align: center;
+  font-size: 30px;
+  background: darkslategray;
+  padding: 20px;
+}
+.nav-div a{
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+}
+.nav-div:hover{
+  background-color: lightslategrey;
+}
+.nav-div a:hover{
+  color: goldenrod;
+}
