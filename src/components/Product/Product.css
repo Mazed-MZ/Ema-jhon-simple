@@ -1,0 +1,14 @@
+.items{
+    display: flex;
+    border-bottom: 3px solid lightgrey;
+    padding: 2%;
+}
+.items img{
+    margin-right: 40px;
+}
+.items-info h6{
+    color: darkblue;
+}
+.info{
+    display: flex;
+}

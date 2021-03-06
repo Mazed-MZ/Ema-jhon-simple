@@ -7,10 +7,13 @@ function App() {
       <Header></Header>
       <header>
         <nav className='nav-div'>
-          <a href="">Shop</a>
-          <a href="">Online Review</a>
-          <a href="">Manage Inventory Here</a>
+          <a href="/Shop">Shop</a>
+          <a href="/Online Review">Online Review</a>
+          <a href="/Manage">Manage Inventory Here</a>
         </nav>
+        <div className='search'>
+          <input type="search" name="" id="" placeholder="Type here to search"/>
+        </div>
       </header>
       <Shop></Shop>
     </div>

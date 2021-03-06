@@ -1,17 +1,24 @@
-.nav-div{
-  text-align: center;
-  font-size: 30px;
-  background: darkslategray;
-  padding: 20px;
-}
-.nav-div a{
+nav{
+  font-size: 20px;
+  background: black;
+  padding: 5px;
   text-decoration: none;
+}
+nav a{
   color: white;
   margin-left: 50px;
 }
-.nav-div:hover{
-  background-color: lightslategrey;
-}
 .nav-div a:hover{
-  color: goldenrod;
+  color: gold;
+}
+.search{
+  background: rgb(58, 52, 52);
+  padding: 20px;
+}
+.search input{
+  width: 1000px;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  left: 180px;
 }

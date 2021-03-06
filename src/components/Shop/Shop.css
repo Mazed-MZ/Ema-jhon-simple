@@ -1,0 +1,9 @@
+.shop-div{
+    display: flex;
+    margin-left: 10%;
+}
+.products{
+    width: 70%;
+    border-right: 5px solid lightgray;
+    padding: 20px;
+}
