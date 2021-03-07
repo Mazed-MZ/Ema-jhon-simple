@@ -1,0 +1,17 @@
+.cart-review{
+    padding: 3%;
+    box-shadow: 20px 20px 30px gray;
+    background: lightgray;
+    width: 800px;
+    margin-left: 300px;
+}
+.cart-review h1{
+    color: black;
+}
+.cart-review:hover{
+    background: gray;
+    box-shadow: 20px 20px 30px lightgray;
+}
+.cart-review h1:hover{
+    color: gold;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import {Table, Button} from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -31,7 +32,7 @@ const Cart = (props) => {
                 </thead>
                 <tbody>
                     <tr>
-                    <   th>Shipping cost</th>
+                        <   th>Shipping cost</th>
                         <td>${shipping}</td>
                     </tr>
                     <tr>
@@ -44,7 +45,9 @@ const Cart = (props) => {
                     </tr>
                 </tbody>
             </Table>
-            <Button variant="info" size="lg" block><FontAwesomeIcon icon={faShoppingCart} />   Review your order</Button>
+            <Link to="/review">
+                <Button variant="info" size="lg" block><FontAwesomeIcon icon={faShoppingCart} />   Review your order</Button>
+            </Link>
         </div>
     );
 };

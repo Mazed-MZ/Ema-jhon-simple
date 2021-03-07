@@ -1,11 +1,11 @@
-.items{
+.review-item{
     display: flex;
     border-bottom: 3px solid lightgrey;
-    padding: 2%;
+    padding: 5%;
 }
-.items img{
+.review-img{
     margin-right: 40px;
 }
-.items-info h6{
+.review-info h3{
     color: darkblue;
 }

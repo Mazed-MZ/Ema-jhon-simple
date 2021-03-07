@@ -5,3 +5,28 @@
 .logo img{
     height: 100px;
 }
+.search{
+    background: rgb(58, 52, 52);
+    padding: 20px;
+}
+.search input{
+    width: 1000px;
+    height: 40px;
+    padding: 10px;
+    position: relative;
+    left: 180px;
+}
+.nav-div a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+}
+.nav-div{
+    font-size: 20px;
+    display: flex;
+    background: black;
+}
+.nav-div a:hover{
+    color: gold;
+    text-decoration: none;
+}
