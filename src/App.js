@@ -27,6 +27,9 @@ function App() {
           <Route path='/inventory'>
             <Inventory></Inventory>
           </Route>
+          <Route path='/place'>
+            <PlaceOrder></PlaceOrder>
+          </Route>
           <Route exact path='/'>
             <Shop></Shop>
           </Route>
@@ -35,9 +38,6 @@ function App() {
           </Route>
           <Route path='*'>
             <NotFound></NotFound>
-          </Route>
-          <Route path='/place'>
-            <PlaceOrder></PlaceOrder>
           </Route>
         </Switch>
       </Router>
