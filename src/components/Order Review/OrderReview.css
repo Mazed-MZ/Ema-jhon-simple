@@ -1,7 +1,11 @@
+.order-review{
+    display: flex;
+}
 .review-item{
     display: flex;
     border-bottom: 3px solid lightgrey;
     padding: 5%;
+    width: 60%;
 }
 .review-img{
     margin-right: 40px;

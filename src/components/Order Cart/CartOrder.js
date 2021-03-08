@@ -3,12 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Cart.css';
 
-const Cart = (props) => {
+const CartOrder = (props) => {
     const cart = props.cart;
-    console.log(cart)
-    let total = cart.reduce((total, pd) => total + pd.price,0);
+    let total = cart.reduce((total, pd) => total + pd.price * pd.quantity,0);
     total = Math.round(total);
     let shipping = 0;
     if (total > 50) {
@@ -20,7 +18,7 @@ const Cart = (props) => {
     const vat = Math.round(total / 10);
     let grandTotal = Math.round(total + shipping + vat);
     return (
-        <div className='cart'>
+        <div className = 'cart'>
             <h3>Order Summery</h3>
             <h4>{cart.length}              <FontAwesomeIcon icon={faShoppingCart} /></h4>
 
@@ -46,11 +44,11 @@ const Cart = (props) => {
                     </tr>
                 </tbody>
             </Table>
-            <Link to="/review">
-                <Button variant="info" size="lg" block><FontAwesomeIcon icon={faShoppingCart} />   Review your order</Button>
+            <Link to="/shop">
+                <Button variant="info" size="lg" block><FontAwesomeIcon icon={faShoppingCart} />   Place your order</Button>
             </Link>
         </div>
     );
 };
 
-export default Cart;
+export default CartOrder;

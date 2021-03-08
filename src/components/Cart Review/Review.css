@@ -1,16 +1,22 @@
+.order-cart{
+    margin-top: 15%;
+    position: absolute;
+    left: 72%;
+}
+.review{
+    display: flex;
+}
 .cart-review{
-    padding: 3%;
+    padding: 1.5%;
     box-shadow: 20px 20px 30px gray;
-    background: lightgray;
-    width: 800px;
-    margin-left: 300px;
+    background: navy;
+    width: 1000px;
+    height: 100px;
+    margin-left: 200px;
 }
 .cart-review h1{
-    color: black;
-}
-.cart-review:hover{
-    background: gray;
-    box-shadow: 20px 20px 30px lightgray;
+    color: white;
+    margin-left: 130px;
 }
 .cart-review h1:hover{
     color: gold;

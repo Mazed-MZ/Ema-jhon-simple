@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'react-bootstrap';
 const Order = (props) => {
-    const { name, quantity, img, price, stock, seller } = props.product
+    const { name, quantity, img, price, stock, seller, key } = props.product
     return (
         <div className='review-item'>
             <div className='review-img'>
@@ -17,7 +17,7 @@ const Order = (props) => {
                 <h4>By:  {seller}</h4>
                 <h4>Available in stock:  {stock}</h4>
 
-                <Button variant="warning"><h5><FontAwesomeIcon icon={faShoppingCart} />   Remove to cart</h5></Button>
+                <Button onClick = {() => props.removeProduct(key)} variant="warning"><h5><FontAwesomeIcon icon={faShoppingCart} />   Remove to cart</h5></Button>
             </div>
         </div>
     );

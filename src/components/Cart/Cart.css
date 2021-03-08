@@ -2,3 +2,11 @@
     width: 400px;
     background: lightgray
 }
+.cart h3{
+    margin-left: 20%;
+    padding: 10px;
+}
+.cart h4{
+    margin-left: 40%;
+    padding: 10px;
+}

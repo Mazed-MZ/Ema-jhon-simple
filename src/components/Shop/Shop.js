@@ -9,11 +9,26 @@ const Shop = () => {
     const first20 = FakeData.slice(0, 20);
     const [products, setProducts] = useState(first20);
     const [cart, setCart] = useState([]);
+    debugger;
     const handleAddProduct = (products) => {
-        const newCart = [...cart, products]
+        // const addedKey = products.key;
+        // const sameProduct = cart.find(pd => pd.key === addedKey);
+        // let count = 1;
+        // let newCart;
+        // if(sameProduct){
+        //     count = sameProduct.quantity + 1;
+        //     sameProduct.quantity = count;
+        //     const others = cart.filter(pd => pd.key !== addedKey);
+        //     newCart = [...others, sameProduct];
+        // }
+        // else{
+        //     products.quantity = 1;
+        //     newCart = [...cart, sameProduct];
+        // }
+        const newCart = [...cart, products];
         setCart(newCart);
-        const sameProduct = newCart.filter(pd => pd.key === products.key);
-        const count = sameProduct.length
+        const sameProduct = newCart.filter(pd => pd.key === products.key)
+        const count = sameProduct.length;
         addToDatabaseCart(products.key, count);
     };
     return (
