@@ -44,7 +44,7 @@ const CartOrder = (props) => {
                     </tr>
                 </tbody>
             </Table>
-            <Link to="/shop">
+            <Link to="/place">
                 <Button variant="info" size="lg" block><FontAwesomeIcon icon={faShoppingCart} />   Place your order</Button>
             </Link>
         </div>

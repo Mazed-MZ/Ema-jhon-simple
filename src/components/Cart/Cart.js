@@ -7,8 +7,8 @@ import './Cart.css';
 
 const Cart = (props) => {
     const cart = props.cart;
-    console.log(cart)
-    let total = cart.reduce((total, pd) => total + pd.price,0);
+    // console.log(cart)
+    let total = cart.reduce((total, pd) => total + pd.price, 0);
     total = Math.round(total);
     let shipping = 0;
     if (total > 50) {
