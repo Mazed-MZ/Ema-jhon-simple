@@ -5,8 +5,11 @@ import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { addToDatabaseCart,getDatabaseCart } from '../../utilities/databaseManager';
 import './Shop.css';
+
 const Shop = () => {
+    //--->>> Load Fake Data <<<---
     const first20 = FakeData.slice(0, 20);
+    // console.log(first20);
     const [products, setProducts] = useState(first20);
     const [cart, setCart] = useState([]);
     // useEffect(()=>{
